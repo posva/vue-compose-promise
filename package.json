@@ -1,6 +1,6 @@
 {
   "name": "vue-compose-promise",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Some awesome description",
   "main": "dist/vue-compose-promise.common.js",
   "module": "dist/vue-compose-promise.esm.js",
