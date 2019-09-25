@@ -6,7 +6,7 @@
   "module": "dist/vue-compose-promise.esm.js",
   "unpkg": "dist/vue-compose-promise.js",
   "browser": "dist/vue-compose-promise.esm.js",
-  "types": "dist/vue-compose-promise/src",
+  "types": "dist/src",
   "sideEffects": false,
   "author": {
     "name": "Eduardo San Martin Morote",
@@ -30,14 +30,20 @@
   "keywords": [],
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
     "@types/jest": "^24.0.18",
     "@typescript-eslint/eslint-plugin": "^2.3.1",
     "@typescript-eslint/parser": "^2.3.1",
     "@vue/composition-api": "^0.3.2",
+    "@vue/test-utils": "^1.0.0-beta.29",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^24.9.0",
     "codecov": "^3.6.1",
     "eslint": "^6.4.0",
     "eslint-config-prettier": "^6.3.0",
     "eslint-plugin-prettier": "^3.1.1",
+    "faked-promise": "^2.1.0",
     "jest": "^24.9.0",
     "pascalcase": "^1.0.0",
     "prettier": "^1.18.2",
@@ -51,7 +57,9 @@
     "rollup-plugin-typescript2": "^0.24.2",
     "ts-jest": "^24.1.0",
     "typescript": "^3.6.3",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-jest": "^3.0.5",
+    "vue-template-compiler": "^2.6.10"
   },
   "peerDependencies": {
     "@vue/composition-api": "~0.3.2"

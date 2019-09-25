@@ -107,16 +107,15 @@ function createEntry(
 }
 
 const builds = [
-  // createEntry({ format: 'cjs' }),
-  // createEntry({ format: 'es', isBrowser: true }),
+  createEntry({ format: 'cjs' }),
+  createEntry({ format: 'es', isBrowser: true }),
 ]
 
 if (pkg.unpkg)
   builds.push(
-    createEntry({ format: 'es', isBrowser: true })
-    // createEntry({ format: 'iife' }),
-    // createEntry({ format: 'iife', minify: true }),
-    // createEntry({ format: 'es', isBrowser: true, minify: true })
+    createEntry({ format: 'iife' }),
+    createEntry({ format: 'iife', minify: true }),
+    createEntry({ format: 'es', isBrowser: true, minify: true })
   )
 
 export default builds
