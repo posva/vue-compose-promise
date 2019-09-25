@@ -41,7 +41,8 @@ describe('Promised', () => {
       expect(wrapper.text()).toBe('')
     })
 
-    it('displays pending', async () => {
+    it.only('displays pending', async () => {
+      console.log(wrapper.vm.isPending)
       expect(wrapper.text()).toBe('pending')
     })
 
@@ -269,7 +270,7 @@ describe('Promised', () => {
     })
   })
 
-  describe('combined slot', () => {
+  describe.skip('combined slot', () => {
     function factory() {
       const [promise, resolve, reject] = fakePromise()
       const wrapper = mount(Promised, {
