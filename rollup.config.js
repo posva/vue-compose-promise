@@ -25,7 +25,7 @@ const exportName = pascalcase(pkg.name)
 function createEntry(
   {
     format, // Rollup format (iife, umd, cjs, es)
-    external, // Rollup external option
+    external = ['vue', '@vue/composition-api'],
     input = 'src/index.ts', // entry point
     env = 'development', // NODE_ENV variable
     minify = false,
@@ -74,6 +74,8 @@ function createEntry(
     config.external = external
   }
 
+  console.log(config.external)
+
   config.plugins.push(
     ts({
       // only check once, during the es version with browser (it includes external libs)
@@ -105,15 +107,16 @@ function createEntry(
 }
 
 const builds = [
-  createEntry({ format: 'cjs' }),
-  createEntry({ format: 'es', isBrowser: true }),
+  // createEntry({ format: 'cjs' }),
+  // createEntry({ format: 'es', isBrowser: true }),
 ]
 
 if (pkg.unpkg)
   builds.push(
-    createEntry({ format: 'iife' }),
-    createEntry({ format: 'iife', minify: true }),
-    createEntry({ format: 'es', isBrowser: true, minify: true })
+    createEntry({ format: 'es', isBrowser: true })
+    // createEntry({ format: 'iife' }),
+    // createEntry({ format: 'iife', minify: true }),
+    // createEntry({ format: 'es', isBrowser: true, minify: true })
   )
 
 export default builds
