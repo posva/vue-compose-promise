@@ -54,6 +54,9 @@ function createEntry(
     ],
     output: {
       banner,
+      globals: {
+        '@vue/composition-api': 'VueCompositionApi',
+      },
       file: `dist/${pkg.name}.UNKNOWN.js`,
       format,
     },
@@ -73,8 +76,6 @@ function createEntry(
   } else {
     config.external = external
   }
-
-  console.log(config.external)
 
   config.plugins.push(
     ts({
@@ -106,10 +107,7 @@ function createEntry(
   return config
 }
 
-const builds = [
-  createEntry({ format: 'cjs' }),
-  createEntry({ format: 'es', isBrowser: true }),
-]
+const builds = [createEntry({ format: 'es', isBrowser: true })]
 
 if (pkg.unpkg)
   builds.push(

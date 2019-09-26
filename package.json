@@ -1,8 +1,8 @@
 {
   "name": "vue-compose-promise",
   "version": "0.0.4",
-  "description": "Some awesome description",
-  "main": "dist/vue-compose-promise.common.js",
+  "description": "Easily manipulate Promises and their state in Vue",
+  "main": "dist/vue-compose-promise.esm.js",
   "module": "dist/vue-compose-promise.esm.js",
   "unpkg": "dist/vue-compose-promise.js",
   "browser": "dist/vue-compose-promise.esm.js",

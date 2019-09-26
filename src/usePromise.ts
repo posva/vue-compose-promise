@@ -2,7 +2,7 @@ import { reactive, ref, watch, Ref } from '@vue/composition-api'
 
 interface Options<T> {
   pendingDelay?: number | Ref<number>
-  promise?: Promise<T> | Ref<Promise<T>>
+  promise?: Promise<T> | Ref<Promise<T>> | Ref<Promise<T> | null> | null
 }
 
 export function usePromise<T>(options: Readonly<Options<T>> = {}) {
