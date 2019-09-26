@@ -46,6 +46,17 @@ export default createComponent({
 </script>
 ```
 
+Both, `pendingDelay` and `promise` can be reactive values like a _computed_ property, a _ref_ or a _prop_:
+
+```js
+const search = ref('')
+const usersPromise = computed(() => featchUsers(search.value))
+const promised = usePromise({
+  pendingDelay: props.displayLoaderDelay,
+  promise: usersPromise,
+})
+```
+
 ## API
 
 ### `usePromise<T>(options?: { pendingDelay?: number | Ref<number>; promise?: Promise<T> | Ref<Promise<T>> })`
