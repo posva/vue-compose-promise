@@ -4,7 +4,7 @@
 
 **Depends on [@vue/composition-api](https://github.com/vuejs/composition-api)**
 
-Demo (TODO link)
+[CodeSandbox demo](https://codesandbox.io/s/vue-compose-promise-example-toum7)
 
 ## Installation
 
