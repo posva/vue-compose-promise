@@ -29,7 +29,7 @@ npm install vue-compose-promise
 <script>
 import { createComponent } from '@vue/composition-api'
 import { usePromise } from 'vue-compose-promise'
-import { fetchUsers } from './data';
+// import { fetchUsers } from './data';
 
 export default createComponent({
   setup() {
@@ -50,7 +50,7 @@ export default createComponent({
 Both, `pendingDelay` and `promise` can be reactive values like a _computed_ property, a _ref_ or a _prop_:
 
 ```js
-import { fetchUsers } from './data';
+// import { fetchUsers } from './data';
 
 const search = ref('')
 const usersPromise = computed(() => fetchUsers(search.value))
