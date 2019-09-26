@@ -13,10 +13,10 @@
     "email": "posva13@gmail.com"
   },
   "scripts": {
-    "lint": "eslint --color --ext=js,html,vue,ts src __tests__ *.js",
-    "lint:fix": "yarn run lint -- --fix",
+    "lint": "eslint --color --ext=js,html,ts src __tests__ *.js",
+    "lint:fix": "yarn run lint --fix",
     "unit": "jest",
-    "dev": "yarn run unit -- --watchAll",
+    "dev": "yarn run unit --watchAll",
     "pretest": "yarn run lint",
     "test": "yarn run unit",
     "build": "rollup -c rollup.config.js",
@@ -43,7 +43,7 @@
     "eslint": "^6.4.0",
     "eslint-config-prettier": "^6.3.0",
     "eslint-plugin-prettier": "^3.1.1",
-    "faked-promise": "^2.1.0",
+    "faked-promise": "^2.2.1",
     "jest": "^24.9.0",
     "pascalcase": "^1.0.0",
     "prettier": "^1.18.2",

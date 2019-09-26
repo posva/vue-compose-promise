@@ -65,7 +65,7 @@ export const Promised = createComponent({
           node.length > 0,
           'Provided scoped slot "combined" cannot be empty'
         )
-        return node
+        return node[0]
       }
 
       if (promised.state.error) {
