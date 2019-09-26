@@ -1,6 +1,6 @@
 {
   "name": "vue-compose-promise",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Easily manipulate Promises and their state in Vue",
   "main": "dist/vue-compose-promise.esm.js",
   "module": "dist/vue-compose-promise.esm.js",
