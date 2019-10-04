@@ -20,7 +20,7 @@ npm install vue-compose-promise
     <span> Is the promise still pending: {{ usersPromise.isPending }} </span>
     <span> Is the 200ms delay over: {{ usersPromise.isDelayOver }} </span>
     <span>
-      Last succesfully resolved data from the promise: {{ usersPromise.data }}
+      Last successfully resolved data from the promise: {{ usersPromise.data }}
     </span>
     <span> Error if current promise failed: {{ usersPromise.error }} </span>
   </div>
