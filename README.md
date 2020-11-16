@@ -1,3 +1,9 @@
+# Use [Vue Promised](https://github.com/posva/vue-promised) instead
+
+It supports Vue 2 and Vue 3
+
+---
+
 # vue-compose-promise [![Build Status](https://badgen.net/circleci/github/posva/vue-compose-promise)](https://circleci.com/gh/posva/vue-compose-promise) [![npm package](https://badgen.net/npm/v/vue-compose-promise)](https://www.npmjs.com/package/vue-compose-promise) [![coverage](https://badgen.net/codecov/c/github/posva/vue-compose-promise)](https://codecov.io/github/posva/vue-compose-promise) [![thanks](https://badgen.net/badge/thanks/♥/pink)](https://github.com/posva/thanks)
 
 > Easily manipulate Promises and their state in Vue
